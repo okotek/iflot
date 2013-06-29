@@ -1,0 +1,17 @@
+iflot - connects Flot library to IPython
+
+Yet another small library trying to enhance the IPython experience with great interactive visualization. 
+The Flot (http://www.flotcharts.org/) plotting library supports a large number of appealing charts and supports rich javascript interaction and data integration.
+
+This work aims to expose the full Flot API to IPython developers. 
+It enhances a previous implmentation by crbates. (https://github.com/crbates/ipython-flot/)
+
+To use the library you should:
+
+1. import iflot
+
+2. Instansiate iflot.Plot()
+
+3. Create a plot placeholder using create_plot_placeholder(). This creates a stub in the notebook that uses a unique name provided by you.
+
+4. Call plot() using the name of the place holder you wish to plot or replace. You may use any option available in the Flot libarary documentation. See the examples below.
