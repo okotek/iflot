@@ -52,7 +52,11 @@ class Plot():
         src += '], %s);'%encoder.encode(options)
 
         IPython.core.display.display_javascript(IPython.core.display.Javascript(data=src,
-                                                                                lib=["http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.min.js","http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.navigate.min.js","http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.selection.min.js"]))
+                lib=["http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.min.js",
+                    "http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.navigate.min.js",
+                    "http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.selection.min.js",
+                    "http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.pie.min.js",
+                    ]))
 
         #print (src)        
         
